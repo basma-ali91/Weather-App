@@ -91,6 +91,9 @@ nav ul {
   font-size: 2.5rem;
 }
 
+.myClass{
+  justify-content: space-between;
+}
 #display .city-temp .card-temp .temp-details h2{
  font-size: 3rem;
 }
@@ -232,7 +235,10 @@ footer i:hover{
   #display .search {
     width: 100%;
   }
-
+  
+  .myClass{
+    justify-content: space-evenly;
+  }
   #display .city-temp {
    text-align: center;
     display: block !important;
