@@ -34,7 +34,10 @@ nav ul {
 /*********************end home section *************** */
 
 /* ********************about section************** */
-
+#about{
+  padding: 3rem 0 !important;
+  margin:  3rem 0 !important;
+}
 #about .about-info {
   padding: 4rem 4rem 0 0;
 }
@@ -179,6 +182,10 @@ footer i:hover{
   nav .navbarBrand img {
     width: 40px !important;
     height: 40px !important;
+  }
+  #about{
+    padding: 1rem 0 !important;
+    margin:  1rem 0 !important;
   }
 }
 
