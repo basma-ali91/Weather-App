@@ -72,7 +72,7 @@ function displayNextDayWeather() {
         let next_day = dateComponant[2];
         console.log(next_day);
         nameofNextDay[i].innerHTML = getNextday(apinextdate);
-        dateofNextDay[i].innerHTML = `${next_day}- ${getTheMonth(apinextdate)}}`;
+        dateofNextDay[i].innerHTML = `${next_day}- ${getTheMonth(apinextdate)}`;
         maxDegree[i].innerHTML = Math.round(responseDate.forecast.forecastday[i + 1].day.maxtemp_c);
         minDegree[i].innerHTML = Math.round(responseDate.forecast.forecastday[i + 1].day.mintemp_c);
         nextDayIcon[i].setAttribute("src", `https:${responseDate.forecast.forecastday[i + 1].day.condition.icon}`);
