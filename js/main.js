@@ -87,3 +87,26 @@ search.addEventListener("keyup", function () {
     current_city = search.value;
     getweather(current_city)
 })
+
+$(document).ready(function(){
+    $("#loading .loader").hide(1000,()=>{
+        $("#loading").fadeOut(1000,()=>{
+            $("body").css("overflow-y","auto")
+        })
+    })
+})
+
+
+// *****************arrow *************
+
+let AboutOffset = $("#about").offset().top;
+$(window).scroll(function(){
+    let wScroll =$(window).scrollTop();
+
+     if(wScroll > AboutOffset -100){
+        $(".none").fadeIn(1000);
+     }
+     else{
+        $(".none").fadeOut(1000);
+     }
+})
