@@ -22,7 +22,7 @@ let search = document.getElementById("searchBar");
 // *********************get data from api****************
 
 async function getweather(current_city) {
-    let apiUrl = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7c9e27a92e624fe186290715222010&q=${current_city}&days=3&aqi=no&alerts=no`);
+    let apiUrl = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=848e4c9efef048e494f100521210205&q=${current_city}&days=3&aqi=no&alerts=no`);
     responseDate = await apiUrl.json();
     console.log(responseDate);
     displayTodayWeather();
@@ -87,6 +87,11 @@ search.addEventListener("keyup", function () {
     current_city = search.value;
     getweather(current_city)
 })
+
+
+
+
+// *****************************loading screen*****************************
 
 $(document).ready(function(){
     $("#loading .loader").hide(1000,()=>{
